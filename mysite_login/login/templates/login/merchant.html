@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跟卖的卖家列表</title>
+</head>
+<body>
+    {% for i in mer %}
+        {{i}}
+    {% empty %}
+    <li>
+        目前没有卖家
+    </li>
+    {% endfor %}
+</body>
+</html>
