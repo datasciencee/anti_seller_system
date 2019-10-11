@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+</head>
+<body>
+    <div class="text" style=" text-align:center;"><h1>个人信息列表</h1></div>
+    <div class="text" style="text-align: right;">
+        <ul class="active"><a href="/add_user_information/">+个人信息</a></ul>
+    </div>
+    <ul>
+        {% for i in userinfor %}
+        <table border="1">
+            <tr>
+                <th>id</th>
+                <th>商家名称</th>
+                <th>商品的ASIN码</th>
+                <th>商品的销售地</th>
+            </tr>
+            <tr>
+                <th>{{forloop.counter}}</th>
+                <th>{{userinfor.store_name}}</th>
+                <th>{{userinfor.goods_id}}</th>
+                <th>{{userinfor.country}}</th>
+            </tr>
+        </table>
+        {% empty %}
+            <div class="text" style=" text-align: center;">
+                <ul>亲爱的{{ request.session.user_name }}目前没有关于您的任何信息</ul>
+            </div>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
+
