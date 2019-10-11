@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加个人信息</title>
+</head>
+<body>
+    <div class="text" style="text-align: center;"><B>添加个人信息</B></div>
+    <div class="col-md-4 col-md-offset-4">
+        <div class="text" style="text-align: center;">
+            <div class="text" style="text-align:center;">商家名称:</div>
+            <div>
+                <input type="text" name="store_name"/>
+            </div>
+        </div>
+        <div class="text" style="text-align: center;">
+            <div class="text" style="text-align:center;">商品的ASIN码:</div>
+            <div>
+                <input type="text" name="goods_id"/>
+            </div>
+        </div>
+        <div class="text" style="text-align: center;">
+            <div class="text" style="text-align:center;">亚马逊站点:</div>
+            <select name="country">
+                <option value="UK" >美国</option>
+            </select>
+        </div>
+        <div class="text" style="text-align: center;">
+        <input type="submit" value="保存" formaction=""/>
+        <input type="submit" value="重置" formaction="/add_user_information/"/>
+        </div>
+    </div>
+
+</body>
+</html>
