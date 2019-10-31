@@ -1,4 +1,4 @@
-# 项目名称      mysite_login/core.py
+# 项目名称      mysite_login/cron.py
 # from django.conf import settings
 # settings.configure()
 
